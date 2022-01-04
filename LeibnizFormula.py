@@ -1,22 +1,18 @@
-#v1.0
+#v1.1
 a=1
 check=1 #(1 for positives, 0 for negatives)
-negatives=[]
-positives=[]
+numbers=[]
 for i in range (100): # (getting closer to pi with each steps.)
     num=1/a
     if check==1:
         check=0
-        positives.append(num)
+        numbers.append(num)
         a+=2
     else:
         check=1
-        negatives.append(num)
+        numbers.append(-num)
         a+=2
-total_positives=0
-for i in positives:    
-    total_positives+=i
-total_negatives=0
-for i in negatives:
-    total_negatives+=i
-print(4*(total_positives-total_negatives))
+total_numbers=0
+for i in numbers:    
+    total_numbers+=i
+print(4*total_numbers)
