@@ -1,3 +1,4 @@
+#v1.0
 a=1
 check=1 #(1 for positives, 0 for negatives)
 negatives=[]
